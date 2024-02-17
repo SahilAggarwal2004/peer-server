@@ -1,2 +1,8 @@
 const { PeerServer } = require("peer");
-PeerServer({ port: process.env.PORT, corsOptions: { origin: [process.env.CORS], maxAge: 600 } });
+
+const { CORS, PORT } = process.env;
+
+PeerServer({
+  corsOptions: { origin: [CORS], maxAge: 600 },
+  port: PORT,
+});
