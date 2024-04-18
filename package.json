@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "bun --watch index.js",
-    "start": "bun index.js"
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
